@@ -1,12 +1,15 @@
 <script>
     import Scroller from "@sveltejs/svelte-scroller";
+    import Pie from "./Pie.svelte"
   
     let count, index, offset, progress;
+    let width, height;
     let visibility={Close: false};
 
     function onClick() {
         visibility.Close = !visibility.Close;
     }
+
 </script>
 
 <Scroller
@@ -18,8 +21,13 @@
   bind:offset
   bind:progress
 >
-    <div class="background" slot="background">
-        
+    <div 
+        class="background" 
+        slot="background" 
+        bind:clientWidth={width}
+        bind:clientHeight={height}
+    >
+        <Pie {index} {width} {height} />
     </div>
 
 
@@ -40,7 +48,8 @@
                 <button on:click={onClick}> Open Tab </button>
             {/if}
         </div>
-        <section>Amazing first finding.</section>
+
+        <section>first finding.</section>
         <div class=button>
             {#if visibility.Close}
                 <button on:click={onClick}> Close Tab </button>
@@ -56,7 +65,7 @@
                 <button on:click={onClick}> Open Tab </button>
             {/if}
         </div>
-        <section>Awesome second finding.</section>
+        <section>second finding.</section>
         <div class=button>
             {#if visibility.Close}
                 <button on:click={onClick}> Close Tab </button>
@@ -72,7 +81,8 @@
                 <button on:click={onClick}> Open Tab </button>
             {/if}
         </div>
-        <section>Crazy last finding.</section>
+        <section>third finding.</section>
+        <section>fourth finding.</section>
     </div>
 </Scroller>
 
@@ -96,6 +106,7 @@
       height: auto;
       position: relative;
       outline: red solid 3px;
+      visibility: visible;
     }
   
     .description {

@@ -3,5 +3,5 @@
 </script>
 
 <main>
-  <ScrollyTeller />
+  <ScrollyTeller/>
 </main>
