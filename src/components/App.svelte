@@ -26,7 +26,7 @@
 
 
 <main>
-    <h1>Scatterplot</h1>
+    <h1>Fun Facts about Powerball</h1>
 
     <h2> Which income class do you think participates in lottery the most? </h2>
     <div class="btn_group">
@@ -67,12 +67,12 @@
     <br>
 
     <p> Write up: <br>
-        So far we have implemented pie chart that shows some 'fun fact' about where lottery winners spend their money. 
-        Then we have a button that let's user guess their hypothesis before showing the data. Doing so makes the user think
-        before mindlessly viewing the visualization so that they remember they retain this information. 
+        So car we have a have a button that let's user guess their intuitions before showing the real data. Doing so promotes self reflection
+        and makes the user think before mindlessly viewing the visualization. 
         At the moment, we are planning to use 'scrollytelling' to first show the above pie charts then let the 
         user explore other data at the end with scatterplots and barcharts about the powerball. The most challenging part will 
-        be to implement the scrolling and animating the pie chart to move along with the scroll.
+        be to implement the scrolling and animating the pie chart to move along with the scroll. We are currently done making pie charts
+        on our local device but unable to make it work on github.
 
     <br>
     <br>
