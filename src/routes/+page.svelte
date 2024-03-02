@@ -3,6 +3,7 @@
   // import ScrollyTeller from '../components/ScrollyTeller.svelte';
 
   let title="Fun Facts: Powerball"
+  let index
 </script>
 
 <title>{title}</title>

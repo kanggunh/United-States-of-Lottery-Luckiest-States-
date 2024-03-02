@@ -9,7 +9,6 @@
     export let width;
     export let height;
   
-    // Dummy data, replace with your actual data
     let datasets = [
         { label: 'Share with Family', value: 83, color: '#00a1e4', description: '83% of lottery winners share their jackpot with at least 1 family member.' },
         { label: 'Donate to Charity', value: 40, color: '#ff6384', description: '40% of lottery jackpot winners choose to donate to charity.' },
@@ -17,18 +16,16 @@
         { label: 'Vacation Outside U.S.', value: 20, color: '#4bc0c0', description: '20% of lottery winners decide to take a vacation outside the U.S.' }
     ];
 
-    // Tweened value for the pie chart animation
     const tweenedValue = tweened(0, {
         duration: 1000,
         easing: cubicOut
     });
   
-    // This function creates a pie chart in the given svg element
     function createPieChart(datum, svgElement) {
         const svg = d3.select(svgElement);
-        svg.selectAll("*").remove(); // Clear the SVG to redraw
+        svg.selectAll("*").remove();
     
-        const radius = Math.min(width, height) / 5;
+        const radius = Math.min(width, height) / 3.1;
         const arc = d3.arc().innerRadius(0).outerRadius(radius);
         const labelArc = d3.arc().outerRadius(radius - 50).innerRadius(radius - 50);
         const pieData = d3.pie().value(d => d.value)([
@@ -37,7 +34,7 @@
         ]);
     
         svg
-            .attr('viewBox', [-width/1.5, -height/2.3, width, height])
+            .attr('viewBox', [-width/2, -height/2, width, height])
             .append('g')
             .attr('stroke', 'black')
             .selectAll('path')
@@ -61,13 +58,13 @@
             .attr('fill', 'white')
             .attr('font-size', '3em')
             .text(`${datum.value}%`);
-        svg.append('text')
+        /*svg.append('text')
             .attr('transform', d => `translate(-450,-150)`)
             .attr('text-anchor', 'right')
             .attr('alignment-baseline', 'right')
             .attr('fill', 'black')
             .attr('font-size', '1.5em')
-            .text(`${datum.description}%`);
+            .text(`${datum.description}%`);*/
     }
   
     let currentData = datasets[0];
@@ -77,7 +74,6 @@
       const svgElement = `#chart-${index}`;
       createPieChart(currentData, svgElement);
   
-      // Start the tween for the value
       tweenedValue.set(currentData.value);
     });
 
@@ -91,18 +87,11 @@
   </script>
   
   <svg id="chart-{index}" width="{width}" height="{height}"></svg>
-  <div class="description">{currentData.description}</div>
 
   <style>
     svg {
-      display: block;
+      display: inline-block;
       margin: 0 auto;
     }
-    .description {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1em;
-  }
   </style>
   

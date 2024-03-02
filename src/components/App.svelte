@@ -2,11 +2,22 @@
 <script>
     import Graph from '../components/Graph.svelte';
     import Bar from '../components/Bar.svelte';
+    import Pie from '../components/Pie.svelte';
 
     let show = 0;
     let toggle_1 = false;
     let toggle_2 = false;
     let ans;
+
+    let index = 0;
+    const width = 300;
+    const height = 300;
+    let datasets = [
+        { label: 'Share with Family', value: 83, color: '#00a1e4', description: '83% of lottery winners share their jackpot with at least 1 family member.' },
+        { label: 'Donate to Charity', value: 40, color: '#ff6384', description: '40% of lottery jackpot winners choose to donate to charity.' },
+        { label: 'Buy a Home', value: 66, color: '#ffcd56', description: '66% of lottery winners buy a new home.' },
+        { label: 'Vacation Outside U.S.', value: 20, color: '#4bc0c0', description: '20% of lottery winners decide to take a vacation outside the U.S.' }
+    ];
 
     function update1(text) {
         toggle_1 = true;
@@ -18,6 +29,10 @@
         ans = text;
     }
 
+    function response(n) {
+        index = n
+    }
+
     const select_1 = () => update1('Not really...',);
     const select_2 = () => update1('Yes, almost correct!');
     const select_3 = () => update1('Pretty much!');
@@ -26,6 +41,16 @@
 
 
 <main>
+    <h1>Fun Facts</h1>
+    <h2>How Do Lottery Winners Spend Their Millions?</h2>
+    <div class="facts">
+        <button on:click={() => response(0)}> (1) Share with family </button>
+        <button on:click={() => response(1)}> (2) Donate to charity </button>
+        <button on:click={() => response(2)}> (3) Buy a home </button>
+        <button on:click={() => response(3)}> (4) Vacation outside the U.S. </button>
+    </div>
+    <h3>{datasets[index].description}</h3>
+    <Pie {index} {width} {height}/>
     <h1>Scatterplot</h1>
 
     <h2> Which income class do you think participates in lottery the most? </h2>
