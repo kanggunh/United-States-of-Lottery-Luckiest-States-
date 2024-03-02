@@ -109,7 +109,7 @@
 
     h1 {
         margin-top: -25px;
-        font-size: 5em;
+        font-size: 3em;
         font-weight: 600;
         line-height: 2;
     }
