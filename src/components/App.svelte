@@ -67,7 +67,7 @@
     <br>
 
     <p> Write up: <br>
-        So car we have a have a button that let's user guess their intuitions before showing the real data. Doing so promotes self reflection
+        So far we have a have a button that let's user guess their intuitions before showing the real data. Doing so promotes self reflection
         and makes the user think before mindlessly viewing the visualization. 
         At the moment, we are planning to use 'scrollytelling' to first show the above pie charts then let the 
         user explore other data at the end with scatterplots and barcharts about the powerball. The most challenging part will 
