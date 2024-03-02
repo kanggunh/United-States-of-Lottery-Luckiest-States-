@@ -51,8 +51,6 @@
     </div>
     <h3>{datasets[index].description}</h3>
     <Pie {index} {width} {height}/>
-    <h1>Scatterplot</h1>
-
     <h2> Which income class do you think participates in lottery the most? </h2>
     <div class="btn_group">
         <button on:click={select_1}> (a) Lower-income </button>
