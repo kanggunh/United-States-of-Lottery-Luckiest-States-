@@ -44,6 +44,7 @@
 
 <main>
     <h1>Fun Facts about Powerball</h1>
+    <h1>Fun Facts about Powerball</h1>
     <h2>How Do Lottery Winners Spend Their Millions?</h2>
     <div class="facts">
         <button on:click={() => response(0)}> (1) Share with family </button>
