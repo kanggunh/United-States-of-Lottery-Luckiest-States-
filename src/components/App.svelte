@@ -45,7 +45,7 @@
 <main>
     <h1>Fun Facts about Powerball</h1>
     <h2>How Do Lottery Winners Spend Their Millions?</h2>
-    <div class="facts">
+    <div class="btn_group">
         <button on:click={() => response(0)}> (1) Share with family </button>
         <button on:click={() => response(1)}> (2) Donate to charity </button>
         <button on:click={() => response(2)}> (3) Buy a home </button>
@@ -173,7 +173,7 @@
         transition-duration: 0.2s;
         text-align: center;
         border-radius: 5px;
-        padding: 15px 28px;
+        padding: 15px 25px;
         margin-top: 5px;
         margin-bottom: 5px;
         font-weight: 500;
