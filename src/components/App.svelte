@@ -18,6 +18,7 @@
         { label: 'Buy a Home', value: 66, color: '#ffcd56', description: '66% of lottery winners buy a new home.' },
         { label: 'Vacation Outside U.S.', value: 20, color: '#4bc0c0', description: '20% of lottery winners decide to take a vacation outside the U.S.' }
     ];
+    let toggle_3 = false;
 
     function update1(text) {
         toggle_1 = true;
@@ -31,6 +32,7 @@
 
     function response(n) {
         index = n
+        toggle_3 = true;
     }
 
     const select_1 = () => update1('Not really...',);
@@ -41,7 +43,7 @@
 
 
 <main>
-    <h1>Fun Facts</h1>
+    <h1>Fun Facts about Powerball</h1>
     <h2>How Do Lottery Winners Spend Their Millions?</h2>
     <div class="facts">
         <button on:click={() => response(0)}> (1) Share with family </button>
@@ -49,9 +51,14 @@
         <button on:click={() => response(2)}> (3) Buy a home </button>
         <button on:click={() => response(3)}> (4) Vacation outside the U.S. </button>
     </div>
-    <h3>{datasets[index].description}</h3>
-    <Pie {index} {width} {height}/>
-    <h1>Scatterplot</h1>
+    {#if toggle_3} 
+        <h3>{datasets[index].description}</h3>
+        <Pie {index} {width} {height}/>
+    {/if}
+
+    <br>
+    <br>
+    <br>
 
     <h2> Which income class do you think participates in lottery the most? </h2>
     <div class="btn_group">
