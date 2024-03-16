@@ -8,6 +8,7 @@
     let toggle_1 = false;
     let toggle_2 = false;
     let ans;
+    let ans_2;
 
     let index = 0;
     const width = 300;
@@ -27,7 +28,7 @@
 
     function update2(text) {
         toggle_2 = true;
-        ans = text;
+        ans_2 = text;
     }
 
     function response(n) {
@@ -38,6 +39,10 @@
     const select_1 = () => update1('Not really...',);
     const select_2 = () => update1('Yes, almost correct!');
     const select_3 = () => update1('Pretty much!');
+
+    const select_4 = () => update2('Good guess!',);
+    const select_5 = () => update2("Hmm.. maybe lottery isn't so fair after all");
+    const select_6 = () => update2("That's ok, we are here to inform you!");
 
 </script>
 
@@ -67,6 +72,7 @@
         <button on:click={select_3}> (c) Upper-income </button>
     </div>   
     <br> 
+
     {#if toggle_1}
         <div class="hide">
             <h3>{ans}</h3>
@@ -83,20 +89,39 @@
         <br>
     {/if}
 
+    <br>
+    <br>
+    <br>
+
+    <h2> What do you think the distribution of Powerball winners across states looks like ? </h2>
+    <div class="btn_group">
+        <button on:click={select_4}> (a) Uneven Distrubution of Winners </button>
+        <button on:click={select_5}> (b) Even Distrubution of Winners </button>
+        <button on:click={select_6}> (c) I don't know </button>
+    </div>   
+
     {#if toggle_2}
         <div class="hide">
-            <h3>{ans}</h3>
-            <p>The Powerball lottery has a very specific demographic regarding income earners.
-                <li>56% of people who make $36,000 and $90,000 annually buy at least one lottery ticket.</li>
-                <li>53% of people who make more than $90,000 annually do the same.</li>
-                <br>
-                And only 40% percent of people how earn less than $36,000 per year buy lottery tickets.
+            <br> 
+            <h3>{ans_2}</h3>
+            <p>
+                <li>45 U.S. states and Washington D.C., Puerto Rico, THe Virgin Islands have Powerball</li>
+                <li>Indiana has the most wins, with a total of 39 Powerball jackpot winners</li>
+                <li>But Alabama, Alaska, Hawaii, Nevada, and Utah do not currently have a state lottery.</li>
             </p>
         </div>
-        <Bar />
+        <div class="barchart">
+            <div class="text">
+                <h3>Number of Jackpot Winners since 1992</h3>
+            </div>
+            <Bar />
+        </div>
         <br>
     {/if}
     <br>
+
+
+
 
     <p> Write up: <br>
         So far we have a have a button that let's user guess their intuitions before showing the real data. Doing so promotes self reflection
@@ -108,8 +133,19 @@
 
     <br>
     <br>
-    <a href="https://www.flaticon.com/free-icons/bingo" title="bingo icons" style="font-size: 10px;">Bingo icons created by Freepik - Flaticon</a>
 </main>
+
+<p style="font-size: 13px;">
+    References:
+    <br>
+    <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/#:~:text=How%20many%20people%20play%20Powerball,181%20million%20players%20each%20year"
+    style="font-size: 9px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
+    <br>
+    <a href="https://www.justice.gov/ust/eo/bapcpa/20220401/bci_data/median_income_table.htm" 
+    style="font-size: 9px;">Median Household Income By States</a>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 9px;">Bingo icons created by Freepik - Flaticon</a>
+</p>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
@@ -130,28 +166,37 @@
         font-family: "Roboto Serif", serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 13px;
         color: var(--color-text);
-        width: 1000px;
+        width: 1200px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
         background-color: #F3F3F3;
     }
-
+    
     h1 {
         margin-top: -25px;
-        font-size: 3em;
+        font-size: 2em;
         font-weight: 600;
         line-height: 2;
     }
 
     h2 {
         width: 800px;
-        font-size: 16px;
+        font-size: 14px;
         margin-left: auto;
         margin-right: auto; 
         text-align: left;  
+        /* background-color: powderblue; */
+    }
+
+    h3 {
+        width: 800px;
+        font-size: 13px;
+        margin-left: auto;
+        margin-right: auto; 
+
         /* background-color: powderblue; */
     }
 
@@ -161,13 +206,13 @@
         margin-right: auto;
         text-align: left;
         line-height: 2.2;
-        font-size: px;
+        font-size: 13px;
     }
 
     button {
         background-color: #FCFCFC;
         font-family: "Roboto Serif", serif;
-        font-size: 13px;
+        font-size: 11px;
         color: black;
         border: 1.5px solid #1B1717; 
         transition-duration: 0.2s;
