@@ -121,30 +121,32 @@
     <br>
 
 
-
-
-    <p> Write up: <br>
-        So far we have a have a button that let's user guess their intuitions before showing the real data. Doing so promotes self reflection
-        and makes the user think before mindlessly viewing the visualization. 
-        At the moment, we are planning to use 'scrollytelling' to first show the above pie charts then let the 
-        user explore other data at the end with scatterplots and barcharts about the powerball. The most challenging part will 
-        be to implement the scrolling and animating the pie chart to move along with the scroll. We are currently done making pie charts
-        on our local device but unable to make it work on github.
+    {#if toggle_1 && toggle_2 && toggle_3}
+    <p> Key Takeaways: <br>
+        <li>Most people share their winnings with their loved ones or their community.</li>
+        <li>Lower-income individuals does not necessarily purchase more lottery tickets.</li>
+        <li>Indiana has the most number if winners since 1992.</li>
+        <li>There might be a possibility that certain states might be favored.</li>
+    </p>
+        
+    {/if}
 
     <br>
     <br>
+
 </main>
 
-<p style="font-size: 13px;">
+<p style="font-size: 12px; text-align: center">
     References:
     <br>
-    <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/#:~:text=How%20many%20people%20play%20Powerball,181%20million%20players%20each%20year"
+    <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/"
     style="font-size: 9px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
     <br>
     <a href="https://www.justice.gov/ust/eo/bapcpa/20220401/bci_data/median_income_table.htm" 
     style="font-size: 9px;">Median Household Income By States</a>
     <br>
     <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 9px;">Bingo icons created by Freepik - Flaticon</a>
+    <br>
 </p>
 
 <style>
