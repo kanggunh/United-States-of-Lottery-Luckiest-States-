@@ -87,9 +87,9 @@
         <p style="text-align: center; font-size: 12px;">In Ten Millions of Dollars vs. Median Income</p>
         <Graph />
         <br>
+        <br>
     {/if}
 
-    <br>
     <br>
     <br>
 
@@ -122,7 +122,8 @@
 
 
     {#if toggle_1 && toggle_2 && toggle_3}
-    <p> Key Takeaways: <br>
+    <h2> Key Takeaways: </h2>
+    <p>
         <li>Most people share their winnings with their loved ones or their community.</li>
         <li>Lower-income individuals does not necessarily purchase more lottery tickets.</li>
         <li>Indiana has the most number if winners since 1992.</li>
