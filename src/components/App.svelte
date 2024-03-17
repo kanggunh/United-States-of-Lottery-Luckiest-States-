@@ -73,7 +73,8 @@
     <h1>Fun Facts about Powerball</h1>
 
     <p style="text-align: center;">
-    Welcome to this page where we will explore some POWERBALL statistics!<br>
+    Welcome to this page where we will explore some POWERBALL statistics!
+    <br>
     Answer the questions one by one and explore the visualizations! Enjoy!
     </p>
 
@@ -202,6 +203,11 @@
 </main>
 
 <p style="font-size: 13px; text-align: center">
+    View our project in <a href='https://github.com/kanggunh/United-States-of-Lottery-Luckiest-States-/tree/main'
+    >GitHub</a>
+    <br>
+    You can watch our website demonstration video <a href="https://youtu.be/tiv2j3dj7Eg">here</a>
+    <br>
     References:
     <br>
     <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/"
