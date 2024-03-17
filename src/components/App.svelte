@@ -104,7 +104,6 @@
             <button on:click={() => response(0)}> (1) Share with family </button>
             <button on:click={() => response(1)}> (2) Donate to charity </button>
             <button on:click={() => response(2)}> (3) Buy a home </button>
-            <button on:click={() => response(3)}> (4) Vacation Outside U.S. </button>
         </div>
         <br>
     {/if}
