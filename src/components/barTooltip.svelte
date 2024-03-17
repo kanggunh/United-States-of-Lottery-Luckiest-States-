@@ -5,7 +5,7 @@
 </script>
 
 <div class='tooltip' style="position: absolute;
-  top: {yScale(data.state) + 1750}px;
+  top: {yScale(data.state) + 1980}px;
   left: 1100px">
 <h1>{data.state}</h1> 
 <p>{data.count} Winners</p>

@@ -49,7 +49,19 @@
 
 <main>
     <h1>Fun Facts about Powerball</h1>
+
+    <p style="text-align: center;">
+    Welcome to this page where we will explore some POWERBALL statistics!<br>
+    Answer the questions one by one and explore the visualizations! Enjoy!
+    </p>
+
+    <br>
+    <br>
+
+
+
     <h2>How Do Lottery Winners Spend Their Millions?</h2>
+    <p>Click through each options below!</p>
     <div class="btn_group">
         <button on:click={() => response(0)}> (1) Share with family </button>
         <button on:click={() => response(1)}> (2) Donate to charity </button>
@@ -59,19 +71,19 @@
     {#if toggle_3} 
         <h3>{datasets[index].description}</h3>
         <Pie {index} {width} {height}/>
+
+        <h2> Which income class do you think participates in lottery the most? </h2>
+        <div class="btn_group">
+            <button on:click={select_1}> (a) Lower-income </button>
+            <button on:click={select_2}> (b) Middle-income </button>
+            <button on:click={select_3}> (c) Upper-income </button>
+        </div>   
+        <br> 
     {/if}
 
     <br>
     <br>
     <br>
-
-    <h2> Which income class do you think participates in lottery the most? </h2>
-    <div class="btn_group">
-        <button on:click={select_1}> (a) Lower-income </button>
-        <button on:click={select_2}> (b) Middle-income </button>
-        <button on:click={select_3}> (c) Upper-income </button>
-    </div>   
-    <br> 
 
     {#if toggle_1}
         <div class="hide">
@@ -81,6 +93,8 @@
                 <li>53% of people who make more than $90,000 annually do the same.</li>
                 <br>
                 And only 40% percent of people how earn less than $36,000 per year buy lottery tickets.
+                <br><br>
+                Hover over the points to view each state and their median income!
             </p>
         </div>
         <h3>Lottery Sales based on Median Income by states</h3>
@@ -88,17 +102,20 @@
         <Graph />
         <br>
         <br>
+        <br>
+        <br>
+
+        <h2> What do you think the distribution of Powerball winners across states looks like ? </h2>
+        <div class="btn_group">
+            <button on:click={select_4}> (a) Uneven Distrubution of Winners </button>
+            <button on:click={select_5}> (b) Even Distrubution of Winners </button>
+            <button on:click={select_6}> (c) I don't know </button>
+        </div> 
+
     {/if}
 
     <br>
-    <br>
-
-    <h2> What do you think the distribution of Powerball winners across states looks like ? </h2>
-    <div class="btn_group">
-        <button on:click={select_4}> (a) Uneven Distrubution of Winners </button>
-        <button on:click={select_5}> (b) Even Distrubution of Winners </button>
-        <button on:click={select_6}> (c) I don't know </button>
-    </div>   
+    <br> 
 
     {#if toggle_2}
         <div class="hide">
