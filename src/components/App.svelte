@@ -121,7 +121,7 @@
         </div> 
 
     {/if}
-    
+
     <br> 
 
     {#if toggle_2}
@@ -152,8 +152,8 @@
     <p>
         <li>Most people share their winnings with their loved ones or their community.</li>
         <li>Lower-income individuals does not necessarily purchase more lottery tickets.</li>
-        <li>Indiana has the most number if winners since 1992.</li>
-        <li>There might be a possibility that certain states might be favored.</li>
+        <li>Indiana has the most number of winners since 1992.</li>
+        <li>There might be a possibility that certain states are be favored.</li>
     </p>
         
     {/if}
