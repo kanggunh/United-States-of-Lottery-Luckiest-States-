@@ -48,6 +48,10 @@
 
 
 <main>
+    <br>
+    <hr style="width:30%;">
+    <br>
+    <br>
     <h1>Fun Facts about Powerball</h1>
 
     <p style="text-align: center;">
@@ -55,10 +59,9 @@
     Answer the questions one by one and explore the visualizations! Enjoy!
     </p>
 
-    <br>
-    <br>
 
-
+    <hr style="width:40%;">
+    <br>
 
     <h2>How Do Lottery Winners Spend Their Millions?</h2>
     <p>Click through each options below!</p>
@@ -72,6 +75,12 @@
         <h3>{datasets[index].description}</h3>
         <Pie {index} {width} {height}/>
 
+        <br>
+        <br>
+        <br>
+        <hr style="width:60%;">
+        <br>
+
         <h2> Which income class do you think participates in lottery the most? </h2>
         <div class="btn_group">
             <button on:click={select_1}> (a) Lower-income </button>
@@ -80,10 +89,6 @@
         </div>   
         <br> 
     {/if}
-
-    <br>
-    <br>
-    <br>
 
     {#if toggle_1}
         <div class="hide">
@@ -100,9 +105,12 @@
         <h3>Lottery Sales based on Median Income by states</h3>
         <p style="text-align: center; font-size: 12px;">In Ten Millions of Dollars vs. Median Income</p>
         <Graph />
+
         <br>
         <br>
         <br>
+        <br>
+        <hr style="width:60%;">
         <br>
 
         <h2> What do you think the distribution of Powerball winners across states looks like ? </h2>
@@ -138,7 +146,11 @@
     <br>
 
 
+
     {#if toggle_1 && toggle_2 && toggle_3}
+    <hr style="width:70%;">
+    <br>
+    <br>
     <h2> Key Takeaways: </h2>
     <p>
         <li>Most people share their winnings with their loved ones or their community.</li>
