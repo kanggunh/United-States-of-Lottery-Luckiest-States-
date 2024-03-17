@@ -65,6 +65,10 @@
 
 
 <main>
+    <br>
+    <hr style="width:30%;">
+    <br>
+    <br>
     <h1>Fun Facts about Powerball</h1>
 
     <p style="text-align: center;">
@@ -72,7 +76,8 @@
     Answer the questions one by one and explore the visualizations! Enjoy!
     </p>
 
-    <br>
+
+    <hr style="width:40%;">
     <br>
 
     <h2>Where Does The Money From The Ticket Sales Go?</h2>
@@ -105,6 +110,12 @@
         <h3>{datasets[index].description}</h3>
         <Pie {index} {width} {height}/>
 
+        <br>
+        <br>
+        <br>
+        <hr style="width:60%;">
+        <br>
+
         <h2> Which income class do you think participates in lottery the most? </h2>
         <div class="btn_group">
             <button on:click={select_1}> (a) Lower-income </button>
@@ -113,10 +124,6 @@
         </div>   
         <br> 
     {/if}
-
-    <br>
-    <br>
-    <br>
 
     {#if toggle_1}
         <div class="hide">
@@ -133,9 +140,12 @@
         <h3>Lottery Sales based on Median Income by states</h3>
         <p style="text-align: center; font-size: 12px;">In Ten Millions of Dollars vs. Median Income</p>
         <Graph />
+
         <br>
         <br>
         <br>
+        <br>
+        <hr style="width:60%;">
         <br>
 
         <h2> What do you think the distribution of Powerball winners across states looks like ? </h2>
@@ -147,12 +157,10 @@
 
     {/if}
 
-    <br>
     <br> 
 
     {#if toggle_2}
         <div class="hide">
-            <br> 
             <h3>{ans_2}</h3>
             <p>
                 <li>45 U.S. states and Washington D.C., Puerto Rico, THe Virgin Islands have Powerball</li>
@@ -171,13 +179,16 @@
     <br>
 
 
+
     {#if toggle_1 && toggle_2 && toggle_3}
+    <hr style="width:70%;">
+    <br>
     <h2> Key Takeaways: </h2>
     <p>
         <li>Most people share their winnings with their loved ones or their community.</li>
         <li>Lower-income individuals does not necessarily purchase more lottery tickets.</li>
-        <li>Indiana has the most number if winners since 1992.</li>
-        <li>There might be a possibility that certain states might be favored.</li>
+        <li>Indiana has the most number of winners since 1992.</li>
+        <li>There might be a possibility that certain states are be favored.</li>
     </p>
         
     {/if}
@@ -187,16 +198,16 @@
 
 </main>
 
-<p style="font-size: 12px; text-align: center">
+<p style="font-size: 13px; text-align: center">
     References:
     <br>
     <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/"
-    style="font-size: 9px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
+    style="font-size: 10px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
     <br>
     <a href="https://www.justice.gov/ust/eo/bapcpa/20220401/bci_data/median_income_table.htm" 
-    style="font-size: 9px;">Median Household Income By States</a>
+    style="font-size: 10px;">Median Household Income By States</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 9px;">Bingo icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 10px;">Bingo icons created by Freepik - Flaticon</a>
     <br>
 </p>
 
