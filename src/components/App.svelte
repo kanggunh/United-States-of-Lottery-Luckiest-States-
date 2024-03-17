@@ -11,8 +11,8 @@
     let ans;
     let ans_2;
 
-    let index = 0;
-    let index2 = 0;
+    let index;
+    let index2;
     const width = 300;
     const height = 300;
     const width2 = 300;
@@ -27,9 +27,10 @@
     let data = [
       { label: 'Prizes & Jackpots', value: 50, color: '#FF6384' , description: 'Only 50% of all ticket sales go to funding the Powerball prizes and jackpots.'},
       { label: 'Charities', value: 35, color: '#36A2EB', description: '35% of all ticket sales go to causes and charities supported by lotteries across the country.'},
-      { label: 'Powerball lottery organisation', value: 9, color: '#FFCE56', description: '9% of ticket sales go to operating expenses of the Powerball lottery organisation.'},
-      { label: 'Retailers', value: 6, color: '#4BC0C0', description: '6% of ticket sales go to retailer commissions.'},
+      { label: 'Powerball lottery organisation', value: 9, color: '#FFCE56', description: '6% of ticket sales go to retailer commissions.'},
+      { label: 'Retailers', value: 6, color: '#4BC0C0', description: '9% of ticket sales go to operating expenses of the Powerball lottery organisation.'},
     ];
+
     let toggle_3 = false;
     let toggle_4 = false;
 
