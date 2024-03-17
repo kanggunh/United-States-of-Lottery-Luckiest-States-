@@ -3,6 +3,7 @@
     import Graph from '../components/Graph.svelte';
     import Bar from '../components/Bar.svelte';
     import Pie from '../components/Pie.svelte';
+    import Pie_2 from '../components/Pie_2.svelte';
 
     let show = 0;
     let toggle_1 = false;
@@ -11,15 +12,26 @@
     let ans_2;
 
     let index = 0;
+    let index2 = 0;
     const width = 300;
     const height = 300;
+    const width2 = 300;
+    const height2 = 300;
     let datasets = [
-        { label: 'Share with Family', value: 83, color: '#00a1e4', description: '83% of lottery winners share their jackpot with at least 1 family member.' },
+        { label: 'Share with Family', value: 83, color: '#00a1e4', description: '83% of lottery winners share their jackpot with at least 1 family member. \t Siblings are most likely to receive some cash, followed by their children and parents.' },
         { label: 'Donate to Charity', value: 40, color: '#ff6384', description: '40% of lottery jackpot winners choose to donate to charity.' },
         { label: 'Buy a Home', value: 66, color: '#ffcd56', description: '66% of lottery winners buy a new home.' },
         { label: 'Vacation Outside U.S.', value: 20, color: '#4bc0c0', description: '20% of lottery winners decide to take a vacation outside the U.S.' }
     ];
+
+    let data = [
+      { label: 'Prizes & Jackpots', value: 50, color: '#FF6384' , description: 'Only 50% of all ticket sales go to funding the Powerball prizes and jackpots.'},
+      { label: 'Charities', value: 35, color: '#36A2EB', description: '35% of all ticket sales go to causes and charities supported by lotteries across the country.'},
+      { label: 'Powerball lottery organisation', value: 9, color: '#FFCE56', description: '6% of ticket sales go to retailer commissions.'},
+      { label: 'Retailers', value: 6, color: '#4BC0C0', description: '9% of ticket sales go to operating expenses of the Powerball lottery organisation.'},
+    ];
     let toggle_3 = false;
+    let toggle_4 = false;
 
     function update1(text) {
         toggle_1 = true;
@@ -34,6 +46,11 @@
     function response(n) {
         index = n
         toggle_3 = true;
+    }
+
+    function updateChart(n) {
+        index2 = n
+        toggle_4 = true;
     }
 
     const select_1 = () => update1('Not really...',);
@@ -58,16 +75,32 @@
     <br>
     <br>
 
-
-
-    <h2>How Do Lottery Winners Spend Their Millions?</h2>
+    <h2>Where Does The Money From The Ticket Sales Go?</h2>
     <p>Click through each options below!</p>
     <div class="btn_group">
-        <button on:click={() => response(0)}> (1) Share with family </button>
-        <button on:click={() => response(1)}> (2) Donate to charity </button>
-        <button on:click={() => response(2)}> (3) Buy a home </button>
-        <button on:click={() => response(3)}> (4) Vacation outside the U.S. </button>
+        <button on:click={() => updateChart(0)}>(1) Prizes & Jackpots</button>
+        <button on:click={() => updateChart(1)}>(2) Charities</button>
+        <button on:click={() => updateChart(2)}>(3) Powerball lottery organisation</button>
+        <button on:click={() => updateChart(3)}>(4) Retailers</button>
     </div>
+    {#if toggle_4}
+        <h3>{data[index2].description}</h3>
+        <Pie_2 {index2} {width2} {height2}/>
+
+        <br>
+        <br>
+        <p>If <b>50%</b> of the sales goes to Prizes & Jackpots...</p>
+        <br>
+        <br>
+        <h2>How Do Lottery Winners Spend Their Millions?</h2>
+        <div class="btn_group">
+            <button on:click={() => response(0)}> (1) Share with family </button>
+            <button on:click={() => response(1)}> (2) Donate to charity </button>
+            <button on:click={() => response(2)}> (3) Buy a home </button>
+        </div>
+        <br>
+    {/if}
+
     {#if toggle_3} 
         <h3>{datasets[index].description}</h3>
         <Pie {index} {width} {height}/>
