@@ -61,7 +61,7 @@
 
     onMount(() => {
       const currentData = data[index2];
-      const svgElement = `#chart-${index2}`;
+      const svgElement = `#chart2-${index2}`;
       createPieChart(currentData, svgElement);
   
       tweenedValue.set(currentData.value);
@@ -70,13 +70,13 @@
     afterUpdate(() => {
         if (width2 && height2) {
         const currentData = data[index2];
-        const svgElement = `#chart-${index2}`;
+        const svgElement = `#chart2-${index2}`;
         createPieChart(currentData, svgElement);
         }
     });
   </script>
   
-  <svg id="chart-{index2}" width="{width2}" height="{height2}"></svg>
+  <svg id="chart2-{index2}" width="{width2}" height="{height2}"></svg>
   
   <style>
     svg {

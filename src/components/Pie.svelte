@@ -84,6 +84,8 @@
         createPieChart(currentData, svgElement);
         }
     });
+
+    
   </script>
   
   <svg id="chart-{index}" width="{width}" height="{height}"></svg>
