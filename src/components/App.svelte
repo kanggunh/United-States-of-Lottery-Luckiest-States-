@@ -71,7 +71,9 @@
     <br>
     <br>
     <h1>Fun Facts about Powerball</h1>
-
+    <hr style="width:40%">
+    <h2 style="text-align: center;">By Kanggun Ham And Jun-Hee Hwang</h2>
+    <hr style="width:40%">
     <p style="text-align: center;">
     Welcome to this page where we will explore some POWERBALL statistics!
     <br>
