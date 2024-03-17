@@ -94,7 +94,7 @@
         <Pie_2 {index2} {width2} {height2}/>
 
         <p>If <b>50%</b> of the sales goes to Prizes & Jackpots...</p>
-        <hr style="width:60%;">
+        <hr style="width:68%;">
         <br>
         <br>
         
@@ -113,9 +113,8 @@
         <h3>{datasets[index].description}</h3>
         <Pie {index} {width} {height}/>
 
-        <br>
-        <br>
-        <hr style="width:60%;">
+        <p>Seems like people like to share their winnings...</p>
+        <hr style="width:68%;">
         <br>
 
         <h2> Which income class do you think participates in lottery the most? </h2>
@@ -146,8 +145,8 @@
         <br>
         <br>
         <br>
-        <br>
-        <hr style="width:60%;">
+        <p>People do this regardless of their income..!</p>
+        <hr style="width:68%;">
         <br>
 
         <h2> What do you think the distribution of Powerball winners across states looks like ? </h2>
@@ -165,6 +164,9 @@
         <div class="hide">
             <h3>{ans_2}</h3>
             <p>
+                Random implies that distrubution should be even.
+                <b>But</b> the winners seems to come from some <b>specifics states!</b><br>
+                <br>
                 <li>45 U.S. states and Washington D.C., Puerto Rico, The Virgin Islands have Powerball</li>
                 <li>Indiana has the most wins, with a total of 39 Powerball jackpot winners</li>
                 <li>But Alabama, Alaska, Hawaii, Nevada, and Utah do not currently have a state lottery.</li>
