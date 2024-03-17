@@ -11,7 +11,7 @@
 
 
 <div class='tooltip' style="position: absolute;
-    top: {yScale(data.sales_in_million) + 1220}px;
+    top: {yScale(data.sales_in_million) + 1770}px;
     left: {xScale(data.income_two) + 400}px;">
     <h1>{data.states} </h1>
     <p> ${Math.round(data.sales_in_million * 100) / 10} million in Sales</p>

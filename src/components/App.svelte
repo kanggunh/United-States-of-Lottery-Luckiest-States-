@@ -18,7 +18,7 @@
     const width2 = 300;
     const height2 = 300;
     let datasets = [
-        { label: 'Share with Family', value: 83, color: '#00a1e4', description: '83% of lottery winners share their jackpot with at least 1 family member. \t Siblings are most likely to receive some cash, followed by their children and parents.' },
+        { label: 'Share with Family', value: 83, color: '#00a1e4', description: '83% of lottery winners share their jackpot with at least 1 family member.'},
         { label: 'Donate to Charity', value: 40, color: '#ff6384', description: '40% of lottery jackpot winners choose to donate to charity.' },
         { label: 'Buy a Home', value: 66, color: '#ffcd56', description: '66% of lottery winners buy a new home.' },
         { label: 'Vacation Outside U.S.', value: 20, color: '#4bc0c0', description: '20% of lottery winners decide to take a vacation outside the U.S.' }
@@ -98,6 +98,7 @@
         <br>
         
         <h2>How Do Lottery Winners Spend Their Millions?</h2>
+        <p>Click through each options below!</p>
         <div class="btn_group">
             <button on:click={() => response(0)}> (1) Share with family </button>
             <button on:click={() => response(1)}> (2) Donate to charity </button>
@@ -110,7 +111,6 @@
         <h3>{datasets[index].description}</h3>
         <Pie {index} {width} {height}/>
 
-        <br>
         <br>
         <br>
         <hr style="width:60%;">
@@ -163,7 +163,7 @@
         <div class="hide">
             <h3>{ans_2}</h3>
             <p>
-                <li>45 U.S. states and Washington D.C., Puerto Rico, THe Virgin Islands have Powerball</li>
+                <li>45 U.S. states and Washington D.C., Puerto Rico, The Virgin Islands have Powerball</li>
                 <li>Indiana has the most wins, with a total of 39 Powerball jackpot winners</li>
                 <li>But Alabama, Alaska, Hawaii, Nevada, and Utah do not currently have a state lottery.</li>
             </p>
