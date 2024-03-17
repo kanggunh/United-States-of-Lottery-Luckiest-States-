@@ -92,11 +92,11 @@
         <h3>{data[index2].description}</h3>
         <Pie_2 {index2} {width2} {height2}/>
 
-        <br>
-        <br>
         <p>If <b>50%</b> of the sales goes to Prizes & Jackpots...</p>
+        <hr style="width:60%;">
         <br>
         <br>
+        
         <h2>How Do Lottery Winners Spend Their Millions?</h2>
         <div class="btn_group">
             <button on:click={() => response(0)}> (1) Share with family </button>
