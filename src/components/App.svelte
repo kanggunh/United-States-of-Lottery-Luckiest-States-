@@ -150,7 +150,6 @@
     {#if toggle_1 && toggle_2 && toggle_3}
     <hr style="width:70%;">
     <br>
-    <br>
     <h2> Key Takeaways: </h2>
     <p>
         <li>Most people share their winnings with their loved ones or their community.</li>
@@ -166,16 +165,16 @@
 
 </main>
 
-<p style="font-size: 12px; text-align: center">
+<p style="font-size: 13px; text-align: center">
     References:
     <br>
     <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/"
-    style="font-size: 9px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
+    style="font-size: 10px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
     <br>
     <a href="https://www.justice.gov/ust/eo/bapcpa/20220401/bci_data/median_income_table.htm" 
-    style="font-size: 9px;">Median Household Income By States</a>
+    style="font-size: 10px;">Median Household Income By States</a>
     <br>
-    <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 9px;">Bingo icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 10px;">Bingo icons created by Freepik - Flaticon</a>
     <br>
 </p>
 
