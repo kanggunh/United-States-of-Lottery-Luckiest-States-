@@ -69,10 +69,8 @@
     <br>
     <hr style="width:30%;">
     <br>
-    <br>
     <h1>Fun Facts about Powerball</h1>
-    <hr style="width:40%">
-    <h2 style="text-align: center;">By Kanggun Ham And Jun-Hee Hwang</h2>
+    <h4 style="text-align: center; font-weight: 500;">By Kanggun Ham And Jun-Hee Hwang</h4>
     <hr style="width:40%">
     <p style="text-align: center;">
     Welcome to this page where we will explore some POWERBALL statistics!
@@ -99,7 +97,7 @@
         <p>If <b>50%</b> of the sales goes to Prizes & Jackpots...</p>
         <hr style="width:68%;">
         <br>
-        <br>
+
         
         <h2>How Do Lottery Winners Spend Their Millions?</h2>
         <p>Click through each options below!</p>
@@ -169,8 +167,8 @@
                 Random implies that distrubution should be even.
                 <b>But</b> the winners seems to come from some <b>specifics states!</b><br>
                 <br>
-                <li>45 U.S. states and Washington D.C., Puerto Rico, The Virgin Islands have Powerball</li>
-                <li>Indiana has the most wins, with a total of 39 Powerball jackpot winners</li>
+                <li>45 U.S. states and Washington D.C., Puerto Rico, The Virgin Islands have Powerball.</li>
+                <li>Indiana has the most wins, with a total of 39 Powerball jackpot winners.</li>
                 <li>But Alabama, Alaska, Hawaii, Nevada, and Utah do not currently have a state lottery.</li>
             </p>
         </div>
@@ -196,10 +194,24 @@
         <li>Indiana has the most number of winners since 1992.</li>
         <li>There might be a possibility that certain states are be favored.</li>
     </p>
+    <br>
+    <hr style="width:70%;">
+    <p style="font-size: 12px; text-align: left">
+        References:
+        <br>
+        <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/"
+        style="font-size: 9.5px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
+        <br>
+        <a href="https://www.justice.gov/ust/eo/bapcpa/20220401/bci_data/median_income_table.htm" 
+        style="font-size: 9.5px;">Median Household Income By States</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 9.5px;">Bingo icons created by Freepik - Flaticon</a>
+        <br>
+    </p>
+    <hr style="width:70%;">
         
     {/if}
 
-    <br>
     <br>
 
 </main>
@@ -209,16 +221,6 @@
     >GitHub</a>
     <br>
     You can watch our website demonstration video <a href="https://youtu.be/tiv2j3dj7Eg">here</a>
-    <br>
-    References:
-    <br>
-    <a href="https://www.searchlogistics.com/learn/statistics/powerball-statistics/"
-    style="font-size: 10px;">Powerball Statistics & Facts That Will Blow Your Mind</a>
-    <br>
-    <a href="https://www.justice.gov/ust/eo/bapcpa/20220401/bci_data/median_income_table.htm" 
-    style="font-size: 10px;">Median Household Income By States</a>
-    <br>
-    <a href="https://www.flaticon.com/free-icons/bingo" style="font-size: 10px;">Bingo icons created by Freepik - Flaticon</a>
     <br>
 </p>
 
