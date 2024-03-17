@@ -192,7 +192,7 @@
         <li>Most people share their winnings with their loved ones or their community.</li>
         <li>Lower-income individuals does not necessarily purchase more lottery tickets.</li>
         <li>Indiana has the most number of winners since 1992.</li>
-        <li>There might be a possibility that certain states are be favored.</li>
+        <li>There might be a possibility that certain states are being favored.</li>
     </p>
     <br>
     <hr style="width:70%;">
