@@ -121,13 +121,11 @@
         </div> 
 
     {/if}
-
-    <br>
+    
     <br> 
 
     {#if toggle_2}
         <div class="hide">
-            <br> 
             <h3>{ans_2}</h3>
             <p>
                 <li>45 U.S. states and Washington D.C., Puerto Rico, THe Virgin Islands have Powerball</li>
